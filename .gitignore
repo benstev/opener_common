@@ -1,0 +1,11 @@
+.vscode/
+firebase-key.json
+.env*
+.DS_Store
+gen
+build/
+setenv.sh
+TODO.md
+tags.json
+work/
+setenv.sh
