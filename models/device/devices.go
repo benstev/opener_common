@@ -57,7 +57,6 @@ func (m *DevicesRepo) RemoveGate(gateId string) {
 
 func (m *DevicesRepo) AddPhone(phoneId string, phone *database.Phone) {
 	log.Debug().Str("phone", phoneId).Msg("Added")
-
 	p := NewPhone(phoneId, phone)
 	m.Phones[phoneId] = p
 }
