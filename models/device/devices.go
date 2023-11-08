@@ -55,15 +55,6 @@ func (m *DevicesRepo) RemoveGate(gateId string) {
 	m.Gates = gates
 }
 
-// func (m *ManagerService) GetGate(gateId string) *database.Gate {
-// 	for _, g := range m.Gates {
-// 		if g.Id == gateId {
-// 			return g
-// 		}
-// 	}
-// 	return nil
-// }
-
 func (m *DevicesRepo) AddPhone(phoneId string, phone *database.Phone) {
 	log.Debug().Str("phone", phoneId).Msg("Added")
 
