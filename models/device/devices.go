@@ -26,7 +26,6 @@ func NewDevicesRepo(ctx context.Context, db database.DbIF) *DevicesRepo {
 
 func (m *DevicesRepo) AddGate(gateId string, gate *database.Gate) {
 	log.Debug().Str("gate", gateId).Msg("Added")
-
 	m.Gates = append(m.Gates, gate)
 }
 
